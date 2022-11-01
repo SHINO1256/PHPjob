@@ -1,0 +1,118 @@
+@media screen and (min-width: 767px) {
+}
+
+@media screen and (max-width: 767px) {
+
+}
+
+@media screen and (max-width: 479px) {
+    .header {
+        width: 200px;
+        height: 200px;
+        background-color: #141f40;
+        position: relative;  
+      }
+      
+      .container1 {
+          display: block;
+          width: 60px;
+          height: 160px;
+          background-color: white;
+          align-items: center;
+          position: relative;
+      }
+      
+      .positioned {
+          position: absolute;
+          top: 20px;
+          right: 70px;
+      }
+      
+      .box1 {
+          width: 40px;
+          height: 40px;
+          background-color: #a9004b;
+          position: absolute;
+          top: 10px;
+          left: 10px;
+      }
+      
+      .box2 {
+          width: 40px;
+          height: 40px;
+          background-color: #a9004b;
+          position: absolute;
+          top: 60px;
+          left: 10px;
+      }
+      
+      .box3 {
+          width: 40px;
+          height: 40px;
+          background-color: #a9004b;
+          position: absolute;
+          top: 110px;
+          left: 10px;
+      }
+
+      .main {
+        display: block;
+      }
+
+      .right {
+          width: 200px;
+          height: 100px;
+          background-color: #80bfa8; 
+      }
+      
+      .left {
+          width: 200px;
+          height: 210px;
+          background-color: #8c2727;
+          position: relative;
+      }
+      
+      .bar1 {
+          background-color: #ff863f;
+          box-sizing: border-box;
+          width: 140px;
+          height: 50px;
+          border: solid white 5px;
+          margin: 0 auto;
+          position: absolute;
+          top: 20px;
+          left: 30px;
+      }
+      
+      .bar2 {
+          background-color: #ff863f;
+          box-sizing: border-box;
+          width: 140px;
+          height: 50px;
+          border: solid white 5px;
+          margin: 0 auto;
+          position: absolute;
+          top: 80px;
+          left: 30px;
+      }
+      
+      .bar3 {
+          background-color: #ff863f;
+          box-sizing: border-box;
+          width: 140px;
+          height: 50px;
+          border: solid white 5px;
+          margin: 0 auto;
+          position: absolute;
+          top: 140px;
+          left: 30px;
+      }
+      
+      .footer {
+          width: 200px;
+          height: 100px;
+          background-color: #d98d30;
+      }
+
+}
+
