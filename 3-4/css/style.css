@@ -1,5 +1,7 @@
-
-.body {
+/* 先生からのコメント「cssをbodyタグに適用するには、
+cssセレクタの先頭のドットを消します。（「.body」→「body」）」*/
+body { /* 修正しました */
+    background-color: grey;
     text-align: center;
     color: white;
     font-family: 'Times New Roman', Times, serif;

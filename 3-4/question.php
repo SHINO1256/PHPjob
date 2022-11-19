@@ -8,9 +8,10 @@ $language_arr=["PHP","Python","JAVA","HTML"];
 $command_arr=["join","select","insert","update"];
 
 //② ①で作成した、配列から正解の選択肢の変数を作成
-$answerPort="80";
-$answerLanguage="HTML";
-$answerCommand="select";
+//先生からのコメント：「(2)question.phpの解答の選択肢は①で作成した配列から作成するようにします。」
+$answerPort= $port_arr[0]; //修正しました
+$answerLanguage=$language_arr[3]; //修正しました
+$answerCommand=$command_arr[1]; //修正しました
 ?>
 
 <html>
