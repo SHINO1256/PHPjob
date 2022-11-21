@@ -26,8 +26,8 @@ class Car{
 
     //「getNumGas」という関数の作成　←修正のコメントをいただき、クラス内に入れました。
     getNumGas(){
-        console.log(`ガソリンは${anyCar.gas}です。ナンバーは${anyCar.number}です。`);
-      };
+        console.log(`ガソリンは${this.gas}です。ナンバーは${this.number}です。`);
+      };  //再度修正しました
 }
 
     //Carクラスをインスタンス化
