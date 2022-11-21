@@ -23,13 +23,16 @@ class Car{
         this.gas = gas;
         this.number = number;
     }
+
+    //「getNumGas」という関数の作成　←修正のコメントをいただき、クラス内に入れました。
+    getNumGas(){
+        console.log(`ガソリンは${anyCar.gas}です。ナンバーは${anyCar.number}です。`);
+      };
 }
 
-//Carクラスをインスタンス化
-let anyCar = new Car('〇〇', '△△');
+    //Carクラスをインスタンス化
+    let anyCar = new Car('〇〇', '△△');
+    anyCar. getNumGas();
+   
 
-//「getNumGas」という関数の作成
-function getNumGas(){
-    console.log(`ガソリンは${anyCar.gas}です。ナンバーは${anyCar.number}です。`);
-};
-getNumGas();
+
