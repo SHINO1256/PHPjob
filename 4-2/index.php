@@ -1,5 +1,20 @@
+<?php
+// DBの接続情報を記述したファイルを読み込む
+require_once('pdo.php');
+// ユーザ情報、記事情報のファイルを読み込む
+require_once('getData.php');
+
+//先生からのご指摘「ユーザ情報、記事情報は、getDataクラスをインスタンス化して取得してください。」
+//getDataクラスをインスタンス化
+$data = new getData();
+// 関数getUserData()からusers_dataを取得する
+$users_data = $data -> getUserData();
 
 
+// 関数getPostData()からpost_dataを取得する
+$post_data = $data -> getPostData();
+
+?>
 <!DOCTYPE html>
 <html lang="en">
     <head>
@@ -14,22 +29,15 @@
         <div class="header">
             <img src="1599315827_logo.png" class="logobox">
             <div class="container">
-                <?php
-                    //データベース接続
-                    require_once("pdo.php");
-                    //ユーザ情報を抽出
-                    $users_data = $pdo->prepare("SELECT first_name, last_name, last_login FROM users");
-                    $users_data->execute();
-                ?>
                 <div class="bar1">
                     <?php
-                        $row = $users_data->fetch();
+                        $row = $users_data;
                         echo 'ようこそ ' . $row['last_name'] .$row['first_name']." さん<br>";
                     ?>
                 </div>
                 <div class="bar2">
                     <?php
-                        $row = $users_data->fetch();
+                        $row = $users_data;
                         echo '最終ログイン日：' . $row['last_login'];
                     ?>
                 </div>
@@ -37,15 +45,10 @@
         </div>
         <div class="main">
             <div class="DB_table">
-                <?php
-                    //全記事を抽出
-                    $post_data = $pdo->prepare("SELECT id, title, category_no, comment, created FROM posts ORDER BY id DESC");
-                    $post_data->execute();
-                ?>
                     <table class="table"><tbody>
                         <tr><th>記事ID</th><th>タイトル</th><th>カテゴリ</th><th>本文</th><th>投稿日</th></tr>
                     <?php
-                        while ($row = $post_data->fetch()) {
+                        while ($row = $post_data->fetch(PDO::FETCH_ASSOC)) {
                     ?>
                             <!--category_noを、条件で変えて表示する方法が分かりませんでした-->
                             <tr>

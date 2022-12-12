@@ -18,7 +18,8 @@ class getData{
      * @return array $users_data ユーザ情報
      */
     public function getUserData(){
-        $getusers_sql = "SELECT * FROM users limit 1";
+        //先生に質問させてください：「最終ログイン日」を表示するには、22行目にも「ORDER BY id desc」を入れるといいのではないでしょうか…？
+        $getusers_sql = "SELECT * FROM users ORDER BY id desc limit 1";
         $users_data = $this->pdo->query($getusers_sql)->fetch(PDO::FETCH_ASSOC);
         return $users_data;
     }
