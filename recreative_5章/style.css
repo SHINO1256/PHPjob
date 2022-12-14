@@ -1,0 +1,101 @@
+h {
+ font-family:Arial, Helvetica, sans-serif;
+}
+
+.button {
+  /* register.php「ユーザー新規登録画面」新規登録ボタン
+  login.php 「ログイン画面」ログインボタン */
+  align-items: center;
+  margin: 0 auto;
+  width: 160px;
+  height: 40px;
+  color: white;
+  font-size: 15px;
+  font-weight: 700;
+  background-color: rgb(54, 120, 224);
+  border-color: white;
+  border-radius: 6px;
+}
+
+.header {
+  display: flex;
+  height: 50px;
+ }
+
+.btn {
+    /* login.php 「ログイン画面」新規登録ボタン
+   */
+  margin: 0;
+  margin-top: 17px;
+  margin-left: 30px;
+  width: 120px;
+  height: 40px;
+  color: white;
+  font-size: 12px;
+  font-weight: 700;
+  background-color: #13bcd6e3;
+  border-color: white;
+  border-radius: 6px;  
+}
+
+.btn1 {
+    /* main.php 「在庫一覧画面」新規登録ボタン
+   */
+   align-items: center;
+   margin: 0 auto;
+   width: 100px;
+   height: 40px;
+   color: white;
+   font-size: 15px;
+   font-weight: 700;
+   background-color: rgb(54, 120, 224);
+   border-color: white;
+   border-radius: 6px;
+}
+
+.btn2 {
+  /* main.php 「在庫一覧画面」ログアウトボタン
+ */
+ align-items: center;
+ margin: 0 auto;
+ width: 100px;
+ height: 40px;
+ color: white;
+ font-size: 15px;
+ font-weight: 700;
+ background-color: rgba(29, 60, 117, 0.639);
+ border-color: white;
+ border-radius: 6px;
+}
+
+table { 
+  border-collapse: collapse;
+  width: 600px;
+  height: 350px;
+  text-align: center;
+
+}
+
+table th, table td {
+  border: solid 1px #acb8bd5c;
+}
+
+th {
+  background-color: #acb8bd5c;
+}
+
+.btn3 {
+    /* main.php 「在庫一覧画面」削除ボタン
+ */
+  align-items: center;
+  margin: auto;
+  width: 50px;
+  height: 30px;
+  color: white;
+  font-size: 12px;
+  font-weight: 700;
+  background-color: #e00c0c;
+  border-color: white;
+  border-radius: 6px; 
+}
+
