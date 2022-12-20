@@ -1,0 +1,144 @@
+h, p {
+    font-family:Arial, Helvetica, sans-serif;
+   }
+
+ .wrapper{
+    width: 1000px;
+    background-color: #7ce4e940;
+    min-height:700px;
+    /* border: 1px solid #ccc; */
+    margin: 0 auto;
+ }
+
+ .header{
+  text-align: center;
+  background-color: #09c0c0bd;
+  margin: 0 0 10 0px;
+  height: 100px;
+  padding: 20px;
+}
+
+.content{
+  text-align: center;
+  width:800px;
+  min-height:500px;
+  background-color: #7ce4e940;
+  border: 5px solid  #168c93;
+  border-radius: 10px;
+  margin: 0 auto;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  padding: 10px;
+}
+
+.content_header{
+  display: flex;
+  justify-content: center;
+}
+
+.form-group{
+  display: flex;
+  justify-content: center;
+}
+.footer{
+  background-color: #09c0c0bd;
+  height: 80px;
+  text-align: center;
+  padding: 10px;
+} 
+
+   .button {
+     /* login.blade.php 「ログイン画面」ログインボタン */
+     align-items: center;
+     margin: 0 auto;
+     width: 160px;
+     height: 40px;
+     color: white;
+     font-size: 15px;
+     font-weight: 700;
+     background-color: rgb(13, 158, 151);
+     border-color: white;
+     border-radius: 6px;
+   }
+   
+ .form-group row {
+     display: flex;
+     justify-content: center;
+     height: 50px;
+  }
+
+   .btn {
+       /* login.blade.php 「ログイン画面」新規登録ボタン */
+     margin: 0;
+     margin-left: 30px;
+     width: 160px;
+     height: 40px;
+     color: white;
+     font-size: 12px;
+     font-weight: 700;
+     background-color: #13bcd6e3;
+     border-color: white;
+     border-radius: 6px;  
+   }
+
+  .login_button{
+    margin-left: 0;
+   }
+   .content2{
+    display: inline-block;
+    text-align: left;
+    width:690px;
+    min-height:100px;
+    background-color: #7ce4e940;
+    border-radius: 10px;
+    margin: 20px 0;
+    padding: 10px;
+}
+
+.tweet {
+  width: 99%;
+
+}
+
+   .submitbtn {
+       /* main.php 「つぶやく」ボタン*/
+      margin-top: 20px;
+      margin-bottom: 20px;
+      margin-left: 80%;
+      width: 100px;
+      height: 40px;
+      color: white;
+      font-size: 15px;
+      font-weight: 700;
+      background-color: #13bcd6e3;
+      border-color: white;
+      border-radius: 6px;
+   }
+   
+   .content3{
+    display: inline-block;
+    text-align: left;
+    width:690px;
+    /* min-height:100px; */
+    background-color: #7ce4e940;
+    border-radius: 10px;
+    margin: 0;
+    padding: 10px;
+}
+
+.btn3 {
+  /* home.blaede.php 削除ボタン
+*/
+align-items: center;
+margin: auto;
+width: 50px;
+height: 30px;
+color: white;
+font-size: 12px;
+font-weight: 700;
+background-color: #e00c0c;
+border-color: white;
+border-radius: 6px; 
+}
+
+
